@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,photo]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{CJKutf8}
+\usepackage{fontawesome}
+%\newcommand\faSkype{{\FA\symbol{"F17E}}}
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{Black}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+%\AtBeginDvi{\input{zhwinfonts}}
+\begin{document}
+
+\name{ JOÃO DA SILVA SANTOS }
+\tagline{Bsc Software Engineering}
+
+\photo{3.25cm}{joao}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  
+  %\birthday{August 2nd, 1991}
+  \email{joaodss@live.com.pt}
+  \phone{(+351) 916647105}
+  %\mailaddress{Ward No-13, Old Post Office Road,Khajuwala }
+  %\location{Braga, Portugal}
+  \linkedin{linkedin.com/in/joão-santos-475b1117a}
+  
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Experience}
+
+
+
+\cvevent{Critical Techworks, SA - MyAPP}{Backend Software Engineer}{February 2019 -- June 2021}{Porto, Portugal}
+\begin{itemize}
+\item Contributed as a Backend Engineer in the development of the BMW App using Node.js and C\#.NET, ensuring robust and scalable application architecture.
+\item Collaborated within an Agile Scrum team, participated in sprint planning, daily stand-ups, and retrospectives to improve team efficiency and project delivery.
+\item Implemented and maintained CI/CD pipelines to automate the deployment process and improve the reliability of microservices, utilizing Terraform and Docker for streamlined infrastructure management.
+\item Took the lead in developing and maintaining core microservices, becoming the go-to expert on the team for troubleshooting and optimizing application performance.
+\item Engaged in code reviews and mentoring junior developers, fostering a culture of continuous learning and improvement within the team.
+\end{itemize}
+\divider
+
+\cvevent{Critical Techworks, SA - Road Clearance}{Backend Software Engineer/ DevOps Software Engineer}{June 2021 - October 2024}{Porto, Portugal}
+\begin{itemize}
+\item Developed a near-real-time data stream service using Scala and Java, enhancing data processing capabilities and improving overall application responsiveness.
+\item Maintained and optimized existing Java microservices, focusing on improving metrics and service health status through the construction of new microservices from the ground up,
+\item Led the migration of Jenkins pipelines to GitHub Actions, streamlining the CI/CD process and increasing deployment efficiency for the team's microservices.
+\item Successfully transitioned all projects from Bitbucket to Github, facilitating improved collaboration and version control within the development team.
+\item Managed the migration of microservices from AWS ECS to AWS EKS, optimizing container orchestration and resource management.
+\item Oversaw cloud infrastructure management using AWS, leveraging Terraform for infrastructure as code and employing Bash and Python scripts for advanced automation tasks.
+\item Reduced Docker image sizes by 80\% optimizing storage and deployment efficiency and implemented a 'Daylight Time Savings' strategy to shutdown Kubernetes pods during off-hours to reduce costs.
+\item Developed serverless monitoring solutions using AWS Lambda, and transitioned monitoring tools from CloudWatch to a more robust stack including Grafana, Prometheus and Kibana.
+\item Wrote comprehensive documentation for all projects and processes, providing clear guidelines and support for team members on DevOps related topics.
+
+\end{itemize}
+
+\divider
+
+\cvevent{Natixiss - System Team}{DevOps Software Engineer}{October 2024 - Now}{Porto, Portugal}
+\begin{itemize}
+\item Serve as a DevOps Engineer in a fast-paced team responsible for maintaing and optimizing the infrastructure of key development tools including Jenkins, Bitbucket, Confluence, Jira, Xebia Labs Release, Xebia Labs Deploy, Checkmarkx, ServiceNow, Artifactory, and MyCloud.
+\item Act as a central reference point for all DevOps-related inquiries and support within the organization, ensuring seamless operation and integration of development tools.
+\item Manage and maintain pre-production and production environments, providing critical support for the infrastructure and applications to need the demands of a demanding development landscape.
+\item Collaborate with cross-functional teams to troubleshoot and resolve issues, ensuring minimal downtime and optimal performance of development tools.
+\item Implement best practices for CI/CD processes and infrastructure management, while also advocating for modern methodologies within a team accustomed to traditional approaches.
+\item Facilitate knowledge sharing and documentation efforts to improve team efficiency and support onboarding processes for new team members.
+
+\end{itemize}
+
+\divider
+
+
+
+\vspace{3mm}
+
+\cvsection{Education}
+
+%\cvevent{Cyber Security Academy (357 Hours)}{Rumos}{September 2020 - October 2021}{Lisbon, Portugal}
+
+%\begin{itemize}
+%    \item MTA Security Fundamentals
+%    \item CompTIA Security+
+%    \item Certified Ethical Hacker
+%   \item CompTIA Cybersecurity Analyst+
+%   \item ISO/IEC 27001
+%    \item MoR (Management of Risk) Certification
+%    \item Certification Rumos Expert (CRE): Security Auditor
+%\end{itemize}
+\cvevent{CTeSP in Information Systems}{Politécnico Leiria}{2017-2019}{Leiria, Portugal}
+\divider
+\cvevent{BSc in Software Engineering}{European Leadership University, Amsterdam}{2021-2024}{Remote, Portugal}
+\vspace{7mm}
+
+
+
+%%\vspace{7mm}
+%%\cvsection{Area of Interest}
+%%\begin{itemize}
+%%\item Music
+%%\item Composition
+%%\item Tennis
+%%\item Badminton
+%%\item Movies
+%%\end{itemize}
+
+\medskip
+
+\clearpage
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+\clearpage
+\end{document}
