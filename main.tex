@@ -45,6 +45,9 @@
 \usepackage[default]{lato}
 \usepackage{CJKutf8}
 \usepackage{fontawesome}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,nosep}
+\AtBeginEnvironment{itemize}{\small}
 %\newcommand\faSkype{{\FA\symbol{"F17E}}}
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -110,7 +113,7 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 
 \cvsection[page1sidebar]{Experience}
 
-\cvevent{Critical Techworks, SA - MyAPP}{Backend Software Engineer}{February 2019 -- June 2021}{Lisbon, Portugal}
+\cvevent{Critical Techworks, SA - BMW mobile app backend}{Backend Software Engineer}{February 2019 -- June 2021}{Lisbon, Portugal}
 \begin{itemize}
 \item Built and operated Node.js and C\#.NET microservices supporting the BMW mobile app.
 \item Owned CI/CD and release automation, improving deployment consistency and service reliability.
@@ -119,14 +122,14 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \end{itemize}
 \divider
 
-\cvevent{Critical Techworks, SA - Road Clearance}{Backend Software Engineer/ DevOps Software Engineer}{June 2021 - October 2024}{Porto, Portugal}
+\cvevent{Critical Techworks, SA - platform migration program}{Backend Software Engineer / DevOps Engineer}{June 2021 -- October 2024}{Porto, Portugal}
 \begin{itemize}
 \item Built a near-real-time data streaming service (Scala/Java) to improve data processing responsiveness.
 \item Modernized delivery by migrating Jenkins pipelines to GitHub Actions and standardizing CI/CD across microservices.
-\item Migrated workloads from AWS ECS to AWS EKS; improved operational consistency for containerized services.
+\item Migrated 7 microservices workloads from AWS ECS to AWS EKS; improved operational consistency for containerized services.
 \item Managed AWS infrastructure as code with Terraform and automation scripts (Bash/Python).
-\item Reduced Docker image sizes by 80\% and introduced off-hours scale-to-zero for non-production workloads to cut costs.
-\item Strengthened observability by moving from CloudWatch-only to a stack including Grafana/Prometheus and Kibana; implemented serverless monitoring with AWS Lambda.
+\item Reduced Docker image sizes by 80\% and introduced off-hours scale-to-zero for non-production workloads, cutting microservice compute costs by 70\%.
+\item Strengthened observability by moving from CloudWatch-only to a stack including Grafana/Prometheus and Kibana; improved troubleshooting and alerting.
 
 \end{itemize}
 
@@ -134,7 +137,7 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \clearpage
 \cvsection[page2sidebar]{Experience}
 
-\cvevent{Natixis - System Team}{DevOps Software Engineer}{October 2024 - April 2025}{Porto, Portugal}
+\cvevent{Natixis - Developer Tooling Infrastructure Team}{DevOps Software Engineer}{October 2024 -- April 2025}{Porto, Portugal}
 \begin{itemize}
 \item Maintained and optimized enterprise development tooling (Jenkins, Bitbucket, Confluence, Jira, XebiaLabs Release/Deploy, Checkmarx, ServiceNow, Artifactory, MyCloud).
 \item Owned pre-production and production environments; delivered incident response and root-cause troubleshooting with cross-functional teams.
@@ -146,29 +149,24 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \divider
 
 
-\cvevent{Tridonic - Keyture Project}{DevOps/Platform Engineer}{April 2025 - Now}{Porto, Portugal}
+\cvevent{Tridonic - Keyture Project}{DevOps / Platform Engineer}{April 2025 -- Present}{Porto, Portugal}
 \begin{itemize}
-  \item Lead DevOps Engineering and Developer Experience, defining standards and paved roads to accelerate delivery.
-  \item Drive the migration from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability.
-  \item Own AWS platform foundations (networking, IAM, security, cost governance) across dev/QA/staging/production environments.
-  \item Administer Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
-  \item Build and operate observability (Prometheus, Grafana, Loki) with dashboards, alerting, and reliability practices.
-  \item Enforce a four-eyes release process in CI/CD (GitHub) and govern access using least-privilege and auditable controls.
+  \item Lead DevOps Engineering and developer experience for a team of 11 developers, defining standards and paved roads to accelerate delivery.
+  \item Migrated 12 services from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability.
+  \item Owned AWS platform foundations (networking, IAM, security, cost governance) across dev/QA/staging/production/monitoring environments.
+  \item Administered 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
+  \item Built and operated observability on a dedicated Kubernetes cluster (Prometheus, Grafana, Loki/Alloy) with dashboards, alerting, and operational practices.
 
 \end{itemize}
 
 \divider
 \cvsection{Projects}
 
-\cvevent{7k Platform}{Home project \textendash{} SaaS-style Internal Developer Platform (IDP)}{Ongoing}{Backstage, Kubernetes, GitOps}
+\cvevent{7k Platform}{Home project \textendash{} SaaS-style Development Platform}{Ongoing}{\href{https://platform.7kgroup.org/}{platform.7kgroup.org}}
 \begin{itemize}
-  \item Designing an Internal Developer Platform around Backstage (Software Catalog, templates, self-service actions) to standardize service creation and ownership.
-  \item Implementing golden paths for CI/CD and GitOps delivery (GitHub Actions + Argo CD/Flux) with environment promotion, repeatable deployments, and fast rollbacks.
-  \item Building a Kubernetes platform layer with automated cluster and add-on provisioning (Terraform / Crossplane), targeting multi-cloud and BYOC-style runtimes.
-  \item Integrating platform security primitives (OIDC/Keycloak SSO, Kubernetes RBAC, secrets management, policy guardrails) with an auditable access model.
-  \item Defining an observability baseline (Prometheus, Grafana, Loki) with standardized dashboards/runbooks to make services operable by default.
+  \item Designing an Internal Developer Platform around Backstage (catalog, templates, self-service actions) to standardize service creation and ownership.
+  \item Implementing golden paths for CI/CD and GitOps delivery (GitHub Actions + Argo CD) with environment promotion and fast rollbacks.
+  \item Building a Kubernetes platform layer with automated cluster and add-on provisioning (Terraform / Crossplane), targeting multi-cloud environments.
+  \item Defining a baseline for security and observability (SSO/RBAC, secrets, Prometheus/Grafana/Loki/Alloy) with standardized dashboards and runbooks.
 \end{itemize}
-
-
-\clearpage
 \end{document}
