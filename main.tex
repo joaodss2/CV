@@ -1,3 +1,4 @@
+% !TEX root = main.tex
 %%%%%%%%%%%%%%%%%
 % This is an sample CV template created using altacv.cls
 % (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
@@ -87,7 +88,8 @@
   %\mailaddress{Ward No-13, Old Post Office Road,Khajuwala }
   %\location{Braga, Portugal}
   \linkedin{linkedin.com/in/joão-santos-475b1117a}
-  
+  \github{github.com/joaodss2}
+
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -115,7 +117,7 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 
 \cvevent{Critical Techworks, SA - BMW mobile app backend}{Backend Software Engineer}{February 2019 -- June 2021}{Lisbon, Portugal}
 \begin{itemize}
-\item Built and operated Node.js and C\#.NET microservices supporting the BMW mobile app.
+\item Built and operated Node.js and C\#.NET microservices supporting the BMW mobile app across dev, QA, staging, and production environments.
 \item Owned CI/CD and release automation, improving deployment consistency and service reliability.
 \item Implemented infrastructure automation using Terraform and Docker.
 \item Led troubleshooting and performance improvements for core services; supported the team through code reviews and mentoring.
@@ -139,7 +141,7 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 
 \cvevent{Natixis - Developer Tooling Infrastructure Team}{DevOps Software Engineer}{October 2024 -- April 2025}{Porto, Portugal}
 \begin{itemize}
-\item Maintained and optimized enterprise development tooling (Jenkins, Bitbucket, Confluence, Jira, XebiaLabs Release/Deploy, Checkmarx, ServiceNow, Artifactory, MyCloud).
+\item Maintained and optimized enterprise development tooling (Jenkins, Bitbucket, Confluence, Jira, XebiaLabs Release/Deploy, Checkmarx, ServiceNow, Artifactory, MyCloud) supporting over 100 teams.
 \item Owned pre-production and production environments; delivered incident response and root-cause troubleshooting with cross-functional teams.
 \item Improved CI/CD practices and operational standards while supporting teams transitioning to modern workflows.
 \item Drove documentation and knowledge sharing to streamline onboarding and day-to-day support.
@@ -151,8 +153,8 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 
 \cvevent{Tridonic - Keyture Project}{DevOps / Platform Engineer}{April 2025 -- Present}{Porto, Portugal}
 \begin{itemize}
-  \item Lead DevOps Engineering and Developer Experience for a team of 11 developers, defining standards and paved roads to accelerate delivery.
-  \item Drive the migration of 12 services from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability.
+  \item Lead DevOps Engineering and Developer Experience for a team of 11 developers, defining standards and paved roads to accelerate weekly releases with 24/7 uptime.
+  \item Drive the migration of 12 services from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability across dev, QA, staging, and production environments.
   \item Own AWS platform foundations (networking, IAM, security, cost governance) across dev/QA/staging/production/monitoring environments.
   \item Administer 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
   \item Build and operate observability on a dedicated Kubernetes cluster (Prometheus, Grafana, Loki/Alloy) with dashboards, alerting, and operational practices.
@@ -162,11 +164,11 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \divider
 \cvsection{Projects}
 
-\cvevent{7k Platform}{Home project \textendash{} SaaS-style Development Platform}{Ongoing}{\href{https://platform.7kgroup.org/}{platform.7kgroup.org}}
+\cvevent{7k Hiroba}{Open-source organization for platformed applications}{Ongoing}{\href{https://hiroba.7kgroup.org/}{hiroba.7kgroup.org}}
 \begin{itemize}
-  \item Designing an Internal Developer Platform around Backstage (catalog, templates, self-service actions) to standardize service creation and ownership.
-  \item Implementing golden paths for CI/CD and GitOps delivery (GitHub Actions + Argo CD) with environment promotion and fast rollbacks.
-  \item Building a Kubernetes platform layer with automated cluster and add-on provisioning (Terraform / Crossplane), targeting multi-cloud environments.
-  \item Defining a baseline for security and observability (SSO/RBAC, secrets, Prometheus/Grafana/Loki/Alloy) with standardized dashboards and runbooks.
+  \item Founded and maintain an open-source project packaging popular applications into production-ready Helm charts, container images, and Kubernetes manifests for self-hosters.
+  \item Build opinionated platform charts that automate infrastructure dependencies (PostgreSQL via CNPG, S3 storage, Keycloak SSO, observability) alongside base application charts.
+  \item Author reusable CI/CD workflows and GitOps manifests (Argo CD / Flux CD) with Crossplane compositions for declarative infrastructure provisioning.
+  \item Publish secure, minimal container images (non-root, pinned versions) and maintain documentation, governance, and community contribution processes.
 \end{itemize}
 \end{document}
