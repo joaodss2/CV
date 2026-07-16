@@ -75,7 +75,7 @@
 \begin{document}
 
 \name{ JOÃO DA SILVA SANTOS }
-\tagline{Platform \& DevOps Engineer}
+\tagline{Platform Engineer --- Infrastructure \& DevOps}
 
 \photo{3.25cm}{joao}
 \personalinfo{%
@@ -86,7 +86,7 @@
   \email{joaodss@live.com.pt}
   \phone{(+351) 916647105}
   %\mailaddress{Ward No-13, Old Post Office Road,Khajuwala }
-  %\location{Braga, Portugal}
+  \location{Porto, Portugal --- relocating to Japan (Tokyo/Osaka)}
   \linkedin{linkedin.com/in/joão-santos-475b1117a}
   \github{github.com/joaodss2}
 
@@ -101,7 +101,7 @@
 
 \cvsection{Summary}
 \begin{quote}
-Platform \& DevOps Engineer with 7 years of experience building cloud-native platforms and delivery automation for product teams. Core stack: AWS (EKS/IAM/VPC), Kubernetes, Terraform, GitHub Actions, GitOps (Argo CD), and observability (Prometheus/Grafana/Loki). Focused on giving development teams self-service tooling and paved roads so they can ship faster with confidence.
+Platform Engineer with 8+ years building and operating cloud-native infrastructure, CI/CD, and Internal Developer Platforms across AWS and self-hosted/on-premise Kubernetes. Deep hands-on experience with Kubernetes, GitOps, observability (Prometheus/Grafana/Loki), secrets management, and backup/disaster-recovery for production databases. Currently running CAIPE, the CNOE open-source AI platform, in production --- using AI agents daily in development and operations. Open-source maintainer (7K-Hiroba, 7K-Minato, workflows-library). Relocating to Japan (Tokyo/Osaka).
 \end{quote}
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -117,22 +117,18 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 
 \cvevent{Critical Techworks, SA - BMW mobile app backend}{Backend Software Engineer}{February 2019 -- June 2021}{Lisbon, Portugal}
 \begin{itemize}
-\item Built and operated Node.js and C\#.NET microservices supporting the BMW mobile app across dev, QA, staging, and production environments.
-\item Owned CI/CD and release automation, improving deployment consistency and service reliability.
-\item Implemented infrastructure automation using Terraform and Docker.
-\item Led troubleshooting and performance improvements for core services; supported the team through code reviews and mentoring.
+\item Built and operated Node.js and C\#.NET microservices supporting the BMW mobile app backend across dev, QA, staging, and production environments.
+\item Owned CI/CD, release automation, and infrastructure-as-code with Terraform and Docker.
 \end{itemize}
 \divider
 
 \cvevent{Critical Techworks, SA - platform migration program}{Backend Software Engineer / DevOps Engineer}{June 2021 -- October 2024}{Porto, Portugal}
 \begin{itemize}
-\item Built a near-real-time data streaming service (Scala/Java) to improve data processing responsiveness.
+\item Migrated 7 microservices workloads from AWS ECS to AWS EKS, improving operational consistency for containerized services.
 \item Modernized delivery by migrating Jenkins pipelines to GitHub Actions and standardizing CI/CD across microservices.
-\item Migrated 7 microservices workloads from AWS ECS to AWS EKS; improved operational consistency for containerized services.
 \item Managed AWS infrastructure as code with Terraform and automation scripts (Bash/Python).
 \item Reduced Docker image sizes by 80\% and introduced off-hours scale-to-zero for non-production workloads, cutting microservice compute costs by 70\%.
-\item Strengthened observability by moving from CloudWatch-only to a stack including Grafana/Prometheus and Kibana; improved troubleshooting and alerting.
-
+\item Strengthened observability by moving from CloudWatch-only to Grafana/Prometheus and Kibana; improved troubleshooting and alerting.
 \end{itemize}
 
 \divider
@@ -142,7 +138,7 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \cvevent{Natixis - Developer Tooling Infrastructure Team}{DevOps Software Engineer}{October 2024 -- April 2025}{Porto, Portugal}
 \begin{itemize}
 \item Maintained and optimized enterprise development tooling (Jenkins, Bitbucket, Confluence, Jira, XebiaLabs Release/Deploy, Checkmarx, ServiceNow, Artifactory, MyCloud) supporting over 100 teams.
-\item Owned pre-production and production environments; delivered incident response and root-cause troubleshooting with cross-functional teams.
+\item Owned pre-production and production environments; delivered incident response, root-cause troubleshooting, and disaster-recovery planning with cross-functional teams.
 \item Improved CI/CD practices and operational standards while supporting teams transitioning to modern workflows.
 \item Drove documentation and knowledge sharing to streamline onboarding and day-to-day support.
 
@@ -151,24 +147,58 @@ Platform \& DevOps Engineer with 7 years of experience building cloud-native pla
 \divider
 
 
-\cvevent{Tridonic - Keyture Project}{DevOps / Platform Engineer}{April 2025 -- Present}{Porto, Portugal}
+\cvevent{Tridonic - Keyture Project}{Platform Engineer}{April 2025 -- Present}{Porto, Portugal}
 \begin{itemize}
-  \item Lead DevOps Engineering and Developer Experience for a team of 11 developers, defining standards and paved roads to accelerate weekly releases with 24/7 uptime.
+  \item Lead platform engineering and developer experience for a team of 11 developers, defining standards and paved roads to accelerate weekly releases with 24/7 uptime.
   \item Drive the migration of 12 services from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability across dev, QA, staging, and production environments.
+  \item Implement GitOps delivery with Argo CD (app-of-apps), making Git the single source of truth for declarative, automated rollouts across all environments.
   \item Own AWS platform foundations (networking, IAM, security, cost governance) across dev/QA/staging/production/monitoring environments.
   \item Administer 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
   \item Build and operate observability on a dedicated Kubernetes cluster (Prometheus, Grafana, Loki/Alloy) with dashboards, alerting, and operational practices.
-
+  \item Own backup and disaster-recovery strategy for production PostgreSQL (AWS RDS, CNPG) and DR planning for production workloads, with tested recovery runbooks.
+  \item Shape platform backlog and runbook culture, treating platform capabilities as products with clear ownership and SRE practices.
 \end{itemize}
 
 \divider
-\cvsection{Projects}
+\cvsection{Platform \& Open Source Projects}
 
-\cvevent{7k Hiroba}{Open-source organization for platformed applications}{Ongoing}{\href{https://hiroba.7kgroup.org/}{hiroba.7kgroup.org}}
+\cvevent{7K-Hiroba}{Open-source Internal Developer Platform framework}{Ongoing}{\href{https://docs.7kgroup.org/hiroba}{docs.7kgroup.org/hiroba}}
 \begin{itemize}
-  \item Founded and maintain an open-source project packaging popular applications into production-ready Helm charts, container images, and Kubernetes manifests for self-hosters.
-  \item Build opinionated platform charts that automate infrastructure dependencies (PostgreSQL via CNPG, S3 storage, Keycloak SSO, observability) alongside base application charts.
-  \item Author reusable CI/CD workflows and GitOps manifests (Argo CD / Flux CD) with Crossplane compositions for declarative infrastructure provisioning.
-  \item Publish secure, minimal container images (non-root, pinned versions) and maintain documentation, governance, and community contribution processes.
+  \item Build an open-source platform engineering framework that exposes infrastructure as self-service Kubernetes APIs (Postgres, object storage, observability) via Crossplane v2 and CDK8s.
+  \item Design a single Go orchestrator function handling 8 composite resource kinds with multi-provider backends (AWS RDS/S3, CNPG, Garage).
+  \item Maintain a Backstage-based IDP portal, TypeScript consumer SDK, and public npm packages (Apache 2.0), with release-please, kind-based E2E tests, and multi-artifact CI/CD.
+\end{itemize}
+
+\divider
+
+\cvevent{7k-inari}{Platform Team as a Service (PTaaS) control plane}{Ongoing}{\href{https://docs.7kgroup.org/inari}{docs.7kgroup.org/inari}}
+\begin{itemize}
+  \item Architect a hub-and-spoke PTaaS control plane: bare-metal RKE2 management cluster (Talos migration planned) provisioning dedicated per-client control planes (VPC, EKS, IAM, Argo CD) via a Crossplane v2 ClientControlPlane XRD.
+  \item Operate a canary client via app-of-apps GitOps ($\sim$30 Argo CD Applications): Backstage portal, Harbor registry, Keycloak SSO, Vault + External Secrets, cert-manager mTLS PKI, Istio/Gateway API, MetalLB on-prem networking.
+  \item Run the data layer on CNPG PostgreSQL with WAL archiving to Garage S3 (barman-cloud), MariaDB/DragonflyDB operators, Longhorn tiered storage, and self-hosted Renovate automation; define SLOs and ADRs for the offering.
+\end{itemize}
+
+\divider
+
+\cvevent{7K-Minato}{Kubernetes-native game-server platform}{Ongoing}{\href{https://docs.7kgroup.org/minato}{docs.7kgroup.org/minato}}
+\begin{itemize}
+  \item Design and build a Kubernetes operator (Go, Kubebuilder) for persistent, multi-game dedicated game servers using CRDs, StatefulSets, and gRPC sidecar agents.
+  \item Ship a public agent SDK, Helm chart, and distroless images signed with cosign and SBOMs, with 80\%+ test coverage, multi-arch builds, and leader-elected HA.
+\end{itemize}
+
+\divider
+
+\cvevent{7K-Group workflows-library}{Reusable CI/CD golden paths}{Ongoing}{\href{https://github.com/7K-Group/workflows-library}{github.com/7K-Group/workflows-library}}
+\begin{itemize}
+  \item Maintain 18 reusable GitHub Actions workflows for containers, Helm, Crossplane functions, cdk8s, and docs.
+  \item Enforce supply-chain security: SHA-pinned actions, keyless cosign signing, SPDX SBOMs, Trivy scans, digest-based promotion.
+\end{itemize}
+
+\divider
+
+\cvevent{CAIPE}{Open-source AI platform engineering (CNOE)}{Ongoing}{\href{https://cnoe-io.github.io/ai-platform-engineering/}{cnoe-io.github.io/ai-platform-engineering}}
+\begin{itemize}
+  \item Run CAIPE in production for multi-agent AI workflows: MCP servers (Argo CD, Backstage, GitHub) behind an agent gateway, OpenFGA relationship-based RBAC, and Milvus RAG on Garage S3.
+  \item Deploy and operate via Helm on Kubernetes with OIDC SSO, observability, and policy-based tool restrictions, applying platform patterns to AI infrastructure (self-service agents, identity management, scalable agentic workflows).
 \end{itemize}
 \end{document}
