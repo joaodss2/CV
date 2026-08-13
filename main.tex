@@ -75,7 +75,7 @@
 \begin{document}
 
 \name{ JOÃO DA SILVA SANTOS }
-\tagline{Platform Engineer --- Infrastructure \& DevOps}
+\tagline{Platform Engineer \& Backend Developer \& DevOps Engineer}
 
 \photo{3.25cm}{joao}
 \personalinfo{%
@@ -86,7 +86,7 @@
   \email{joaodss@live.com.pt}
   \phone{(+351) 916647105}
   %\mailaddress{Ward No-13, Old Post Office Road,Khajuwala }
-  \location{Porto, Portugal --- relocating to Japan (Tokyo/Osaka)}
+  \location{Porto, Portugal}
   \linkedin{linkedin.com/in/joão-santos-475b1117a}
   \github{github.com/joaodss2}
 
@@ -101,7 +101,7 @@
 
 \cvsection{Summary}
 \begin{quote}
-Platform Engineer with 8+ years building and operating cloud-native infrastructure, CI/CD, and Internal Developer Platforms across AWS and self-hosted/on-premise Kubernetes. Deep hands-on experience with Kubernetes, GitOps, observability (Prometheus/Grafana/Loki), secrets management, and backup/disaster-recovery for production databases. Currently running CAIPE, the CNOE open-source AI platform, in production --- using AI agents daily in development and operations. Open-source maintainer (7K-Hiroba, 7K-Minato, workflows-library). Relocating to Japan (Tokyo/Osaka).
+Platform Engineer, Backend Developer, and DevOps Engineer with 8+ years building and operating cloud-native infrastructure, CI/CD, and Internal Developer Platforms across AWS and self-hosted/on-premise Kubernetes. Deep hands-on experience with Kubernetes, GitOps, observability (Prometheus/Grafana/Loki), secrets management, and backup/disaster-recovery for production databases. Currently running kAgent (product AI agents) and CAIPE, the CNOE open-source AI platform, in production --- using AI agents daily in development and operations. Open-source maintainer (7K-Hiroba, 7K-Minato, workflows-library).
 \end{quote}
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -156,6 +156,8 @@ Platform Engineer with 8+ years building and operating cloud-native infrastructu
   \item Administer 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
   \item Build and operate observability on a dedicated Kubernetes cluster (Prometheus, Grafana, Loki/Alloy) with dashboards, alerting, and operational practices.
   \item Own backup and disaster-recovery strategy for production PostgreSQL (AWS RDS, CNPG) and DR planning for production workloads, with tested recovery runbooks.
+  \item Run kAgent in production for product-facing AI agents, operating Kubernetes-native agent infrastructure for the product.
+  \item Run CAIPE (CNOE) in production for developer experience: agentic assistance for developer workflows and infrastructure operations.
   \item Shape platform backlog and runbook culture, treating platform capabilities as products with clear ownership and SRE practices.
 \end{itemize}
 
@@ -170,6 +172,8 @@ Platform Engineer with 8+ years building and operating cloud-native infrastructu
 \end{itemize}
 
 \divider
+\clearpage
+\cvsection[page3sidebar]{Platform \& Open Source Projects (cont.)}
 
 \cvevent{7k-inari}{Platform Team as a Service (PTaaS) control plane}{Ongoing}{\href{https://docs.7kgroup.org/inari}{docs.7kgroup.org/inari}}
 \begin{itemize}
@@ -196,9 +200,12 @@ Platform Engineer with 8+ years building and operating cloud-native infrastructu
 
 \divider
 
-\cvevent{CAIPE}{Open-source AI platform engineering (CNOE)}{Ongoing}{\href{https://cnoe-io.github.io/ai-platform-engineering/}{cnoe-io.github.io/ai-platform-engineering}}
+\cvevent{7K-Mure}{AI agent workstation built on CAIPE and Kandev, powered by kAgent}{Ongoing}{\href{https://7kgroup.org/mure}{7kgroup.org/mure}}
 \begin{itemize}
-  \item Run CAIPE in production for multi-agent AI workflows: MCP servers (Argo CD, Backstage, GitHub) behind an agent gateway, OpenFGA relationship-based RBAC, and Milvus RAG on Garage S3.
+  \item Run an AI agent workstation for development teams, built on CAIPE (CNOE open-source platform for assisted development) and powered by kAgent as the production runtime for AI agents on Kubernetes.
+  \item Orchestrate multiple coding agents in parallel with Kandev (AI kanban and development environment), using review-first workflows, git worktree isolation, and multi-step pipelines mixing agents per step (plan, implement, review).
+  \item Operate kAgent in production for product-facing AI agents, with declarative agent lifecycle management on Kubernetes-native agent infrastructure.
+  \item Run multi-agent AI workflows with MCP servers (Argo CD, Backstage, GitHub) behind an agent gateway, OpenFGA relationship-based RBAC, and Milvus RAG on Garage S3.
   \item Deploy and operate via Helm on Kubernetes with OIDC SSO, observability, and policy-based tool restrictions, applying platform patterns to AI infrastructure (self-service agents, identity management, scalable agentic workflows).
 \end{itemize}
 \end{document}
