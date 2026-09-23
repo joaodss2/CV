@@ -36,7 +36,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm,footskip=2\baselineskip}
 
 % Change the font if you want to.
 
@@ -101,7 +101,7 @@
 
 \cvsection{Summary}
 \begin{quote}
-Platform Engineer, Backend Developer, and DevOps Engineer with 8+ years building and operating cloud-native infrastructure, CI/CD, and Internal Developer Platforms across AWS and self-hosted/on-premise Kubernetes. Deep hands-on experience with Kubernetes, GitOps, observability (Prometheus/Grafana/Loki), secrets management, and backup/disaster-recovery for production databases. Currently running kAgent (product AI agents) and CAIPE, the CNOE open-source AI platform, in production --- using AI agents daily in development and operations. Open-source maintainer (7K-Hiroba, 7K-Minato, workflows-library).
+Platform Engineer, Backend Developer, and DevOps Engineer with 8+ years building and operating cloud-native infrastructure, CI/CD, and Internal Developer Platforms across AWS and self-hosted/on-premise Kubernetes. Deep hands-on experience with Kubernetes, GitOps, observability (Prometheus/Grafana/Loki), secrets management, and backup/disaster-recovery for production databases. Currently running kAgent (product AI agents) and CAIPE, the CNOE open-source AI platform, in production --- using AI agents daily in development and operations. Head maintainer of 7K, an open-source initiative bringing Platform Engineering to midsized companies.
 \end{quote}
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -139,9 +139,7 @@ Platform Engineer, Backend Developer, and DevOps Engineer with 8+ years building
 \begin{itemize}
 \item Maintained and optimized enterprise development tooling (Jenkins, Bitbucket, Confluence, Jira, XebiaLabs Release/Deploy, Checkmarx, ServiceNow, Artifactory, MyCloud) supporting over 100 teams.
 \item Owned pre-production and production environments; delivered incident response, root-cause troubleshooting, and disaster-recovery planning with cross-functional teams.
-\item Improved CI/CD practices and operational standards while supporting teams transitioning to modern workflows.
-\item Drove documentation and knowledge sharing to streamline onboarding and day-to-day support.
-
+\item Improved CI/CD practices and operational standards while supporting teams transitioning to modern workflows, driving documentation and knowledge sharing.
 \end{itemize}
 
 \divider
@@ -149,63 +147,23 @@ Platform Engineer, Backend Developer, and DevOps Engineer with 8+ years building
 
 \cvevent{Tridonic - Keyture Project}{Platform Engineer}{April 2025 -- Present}{Porto, Portugal}
 \begin{itemize}
-  \item Lead platform engineering and developer experience for a team of 11 developers, defining standards and paved roads to accelerate weekly releases with 24/7 uptime.
-  \item Drive the migration of 12 services from Docker on standalone EC2 to Kubernetes, standardizing deployments and improving reliability across dev, QA, staging, and production environments.
-  \item Implement GitOps delivery with Argo CD (app-of-apps), making Git the single source of truth for declarative, automated rollouts across all environments.
-  \item Own AWS platform foundations (networking, IAM, security, cost governance) across dev/QA/staging/production/monitoring environments.
-  \item Administer 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) to keep runtime operations secure and efficient.
+  \item Lead platform engineering and developer experience for a team of 11 developers, defining standards and paved roads to accelerate weekly releases with 24/7 uptime; shape platform backlog and runbook culture with SRE practices.
+  \item Drive the migration of 12 services from Docker on standalone EC2 to Kubernetes with GitOps delivery via Argo CD (app-of-apps), standardizing deployments and improving reliability across all environments.
+  \item Own AWS platform foundations (networking, IAM, security, cost governance) and administer 5 Kubernetes clusters (upgrades, autoscaling, RBAC/quotas, secrets management) across all environments.
   \item Build and operate observability on a dedicated Kubernetes cluster (Prometheus, Grafana, Loki/Alloy) with dashboards, alerting, and operational practices.
-  \item Own backup and disaster-recovery strategy for production PostgreSQL (AWS RDS, CNPG) and DR planning for production workloads, with tested recovery runbooks.
-  \item Run kAgent in production for product-facing AI agents, operating Kubernetes-native agent infrastructure for the product.
-  \item Run CAIPE (CNOE) in production for developer experience: agentic assistance for developer workflows and infrastructure operations.
-  \item Shape platform backlog and runbook culture, treating platform capabilities as products with clear ownership and SRE practices.
+  \item Own backup and disaster-recovery strategy for production PostgreSQL (AWS RDS, CNPG), with tested recovery runbooks.
+  \item Run kAgent (product-facing AI agents) and CAIPE (CNOE agentic assistance) in production on Kubernetes-native agent infrastructure.
 \end{itemize}
 
 \divider
-\cvsection{Platform \& Open Source Projects}
+\cvsection{Open Source}
 
-\cvevent{7K-Hiroba}{Open-source Internal Developer Platform framework}{Ongoing}{\href{https://docs.7kgroup.org/hiroba}{docs.7kgroup.org/hiroba}}
+\cvevent{7K}{Head Maintainer --- open-source platform engineering for midsized companies}{Ongoing}{\href{https://7kgroup.org}{7kgroup.org}}
 \begin{itemize}
-  \item Build an open-source platform engineering framework that exposes infrastructure as self-service Kubernetes APIs (Postgres, object storage, observability) via Crossplane v2 and CDK8s.
-  \item Design a single Go orchestrator function handling 8 composite resource kinds with multi-provider backends (AWS RDS/S3, CNPG, Garage).
-  \item Maintain a Backstage-based IDP portal, TypeScript consumer SDK, and public npm packages (Apache 2.0), with release-please, kind-based E2E tests, and multi-artifact CI/CD.
-\end{itemize}
-
-\divider
-\clearpage
-\cvsection[page3sidebar]{Platform \& Open Source Projects (cont.)}
-
-\cvevent{7k-inari}{Platform Team as a Service (PTaaS) control plane}{Ongoing}{\href{https://docs.7kgroup.org/inari}{docs.7kgroup.org/inari}}
-\begin{itemize}
-  \item Architect a hub-and-spoke PTaaS control plane: bare-metal RKE2 management cluster (Talos migration planned) provisioning dedicated per-client control planes (VPC, EKS, IAM, Argo CD) via a Crossplane v2 ClientControlPlane XRD.
-  \item Operate a canary client via app-of-apps GitOps ($\sim$30 Argo CD Applications): Backstage portal, Harbor registry, Keycloak SSO, Vault + External Secrets, cert-manager mTLS PKI, Istio/Gateway API, MetalLB on-prem networking.
-  \item Run the data layer on CNPG PostgreSQL with WAL archiving to Garage S3 (barman-cloud), MariaDB/DragonflyDB operators, Longhorn tiered storage, and self-hosted Renovate automation; define SLOs and ADRs for the offering.
-\end{itemize}
-
-\divider
-
-\cvevent{7K-Minato}{Kubernetes-native game-server platform}{Ongoing}{\href{https://docs.7kgroup.org/minato}{docs.7kgroup.org/minato}}
-\begin{itemize}
-  \item Design and build a Kubernetes operator (Go, Kubebuilder) for persistent, multi-game dedicated game servers using CRDs, StatefulSets, and gRPC sidecar agents.
-  \item Ship a public agent SDK, Helm chart, and distroless images signed with cosign and SBOMs, with 80\%+ test coverage, multi-arch builds, and leader-elected HA.
-\end{itemize}
-
-\divider
-
-\cvevent{7K-Group workflows-library}{Reusable CI/CD golden paths}{Ongoing}{\href{https://github.com/7K-Group/workflows-library}{github.com/7K-Group/workflows-library}}
-\begin{itemize}
-  \item Maintain 18 reusable GitHub Actions workflows for containers, Helm, Crossplane functions, cdk8s, and docs.
-  \item Enforce supply-chain security: SHA-pinned actions, keyless cosign signing, SPDX SBOMs, Trivy scans, digest-based promotion.
-\end{itemize}
-
-\divider
-
-\cvevent{7K-Mure}{AI agent workstation built on CAIPE and Kandev, powered by kAgent}{Ongoing}{\href{https://7kgroup.org/mure}{7kgroup.org/mure}}
-\begin{itemize}
-  \item Run an AI agent workstation for development teams, built on CAIPE (CNOE open-source platform for assisted development) and powered by kAgent as the production runtime for AI agents on Kubernetes.
-  \item Orchestrate multiple coding agents in parallel with Kandev (AI kanban and development environment), using review-first workflows, git worktree isolation, and multi-step pipelines mixing agents per step (plan, implement, review).
-  \item Operate kAgent in production for product-facing AI agents, with declarative agent lifecycle management on Kubernetes-native agent infrastructure.
-  \item Run multi-agent AI workflows with MCP servers (Argo CD, Backstage, GitHub) behind an agent gateway, OpenFGA relationship-based RBAC, and Milvus RAG on Garage S3.
-  \item Deploy and operate via Helm on Kubernetes with OIDC SSO, observability, and policy-based tool restrictions, applying platform patterns to AI infrastructure (self-service agents, identity management, scalable agentic workflows).
+  \item Lead 7K as head maintainer: an open-source initiative closing the platform engineering gap so midsized companies can leverage the benefits of Platform Engineering --- golden paths, self-service infrastructure, paved-road CI/CD --- without the \$1.5--3M/year cost of a dedicated in-house platform team.
+  \item \textbf{7K-Inari}: purpose-built, multi-tenant Internal Developer Platform for AWS and Kubernetes (Apache-2.0, not a Backstage fork): hub-and-spoke control plane with outbound-only agents (zero tenant credentials on the hub), a catalog projected from what clusters actually run, schema-driven GitOps deploys, multi-tenancy (Keycloak Organizations), fleet management, and built-in policy/audit.
+  \item \textbf{7K-Hiroba}: Crossplane v2 + CDK8s framework exposing infrastructure as self-service Kubernetes APIs (Postgres, object storage, observability), via a single Go orchestrator handling 8 composite resource kinds with multi-provider backends (AWS RDS/S3, CNPG, Garage), plus a Backstage IDP portal, TypeScript SDK, and public npm packages (Apache 2.0).
+  \item \textbf{7K-Minato}: Kubernetes operator (Go, Kubebuilder) for persistent, multi-game dedicated game servers, with a public agent SDK, Helm chart, and cosign-signed distroless images with SBOMs.
+  \item \textbf{7K-Mure}: AI agent workstation built on CAIPE (CNOE) and Kandev, powered by kAgent on Kubernetes; parallel coding agents with review-first, multi-step pipelines, MCP servers behind an agent gateway, OpenFGA RBAC, and Milvus RAG.
 \end{itemize}
 \end{document}
